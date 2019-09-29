@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Login {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// Set driver path
 		System.setProperty("webdriver.chrome.driver",
 				"./drivers/chromedriver.exe");
@@ -16,6 +16,8 @@ public class Login {
 		driver.get("http://leaftaps.com/opentaps");
 		// maximize the browser
 		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
 		driver.findElementById("username")
 			.sendKeys("DemoSalesManager");
 		driver.findElementById("password")
