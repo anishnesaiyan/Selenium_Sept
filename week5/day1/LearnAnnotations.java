@@ -6,12 +6,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class LearnAnnotations {
-  @Test
+	@Ignore
+	@Test(/*enabled=false*/)
   public void test1() {
 	  System.out.println("Test 1");
   }

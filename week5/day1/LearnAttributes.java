@@ -1,5 +1,6 @@
 package week5.day1;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LearnAttributes {
@@ -17,5 +18,15 @@ public class LearnAttributes {
 	public void runF() {
 		System.out.println("Run Delete Lead for Balaji");
 	}
+	
+	@Test()
+	 public void run() {
+		 
+	 }
+	 
+	 @DataProvider(name="smoke")
+	 public Object[][] returnData(){
+		 return null;
+	 }
 
 }
